@@ -12,6 +12,7 @@ const Front = ({ loginUser, setLoginUser }) => {
   const [error, setError] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
 
   const signin = async (e) => {
     e.preventDefault();
@@ -130,7 +131,7 @@ const Front = ({ loginUser, setLoginUser }) => {
                         type="text"
                         placeholder="Name"
                         name="name"
-                        value={details.name}
+                        value={name}
                         onChange={handleChange}
                       />
                       <input
@@ -138,14 +139,14 @@ const Front = ({ loginUser, setLoginUser }) => {
                         type="email"
                         placeholder="Email"
                         name="email"
-                        value={details.email}
+                        value={email}
                         onChange={handleChange}
                       />
                       <input
                         type="password"
                         className="input"
                         name="password"
-                        value={details.password}
+                        value={password}
                         placeholder="Password"
                         onChange={handleChange}
                       />
