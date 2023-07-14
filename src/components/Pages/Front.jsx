@@ -50,7 +50,7 @@ const Front = ({ loginUser, setLoginUser }) => {
     <>
       {
         <div className="front-container">
-          <img src="/public/img/front.jpg" alt="" className="front-img" />
+          <img src="/img/front.jpg" alt="" className="front-img" />
           <div className="nav">
             <div className="nav-container">
               <div className="nav-logo">
