@@ -132,7 +132,7 @@ const Front = ({ loginUser, setLoginUser }) => {
                         placeholder="Name"
                         name="name"
                         value={name}
-                        onChange={handleChange}
+                        onChange={(e) => setName(e.target.value)}
                       />
                       <input
                         className="input"
@@ -140,7 +140,7 @@ const Front = ({ loginUser, setLoginUser }) => {
                         placeholder="Email"
                         name="email"
                         value={email}
-                        onChange={handleChange}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                       <input
                         type="password"
@@ -148,7 +148,7 @@ const Front = ({ loginUser, setLoginUser }) => {
                         name="password"
                         value={password}
                         placeholder="Password"
-                        onChange={handleChange}
+                        onChange={(e) => setPassword(e.target.value)}
                       />
                       <button>Sign Up</button>
                       <h4 onClick={onClick}>Sign in</h4>
